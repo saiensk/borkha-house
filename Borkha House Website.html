@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Borkha House - Elegant Burkhas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Cormorant Garamond', serif;
+      background-color: black;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: gold;
+      color: black;
+      padding: 20px;
+      text-align: center;
+      font-size: 2.2em;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      background-color: #111;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: gold;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: gold;
+      left: 0;
+      bottom: -5px;
+      transition: width 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .collection {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .item {
+      background-color: #111;
+      border: 2px solid gold;
+      padding: 20px;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .item:hover {
+      transform: translateY(-10px);
+    }
+
+    .item img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: gray;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        font-size: 1.8em;
+      }
+      nav a {
+        font-size: 1em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        font-size: 1.5em;
+        padding: 15px;
+      }
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+      nav a {
+        font-size: 1em;
+      }
+      section {
+        padding: 30px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  Borkha House
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#collection">Collections</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+  <h1>Welcome to Borkha House</h1>
+  <p>Discover the finest embroidered burkhas crafted with timeless elegance and love.</p>
+</section>
+
+<section id="collection">
+  <h2>Our Collections</h2>
+  <div class="collection">
+    <div class="item">
+      <img src="1.jpeg" alt="Burkha 1">
+      <h3>Elegant Gold Embroidery</h3>
+    </div>
+    <div class="item">
+      <img src="2.jpeg" alt="Burkha 2">
+      <h3>Luxury White Patterns</h3>
+    </div>
+    <div class="item">
+      <img src="3.jpeg" alt="Burkha 3">
+      <h3>Black Beauty Embroidery</h3>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Visit Our Boutique: <strong>Kulgachi Bortala, Ponditpur, Jangipur, Murshidabad 742213</strong></p>
+  <p>Call / WhatsApp: <strong>+91-6295758019</strong></p>
+  <p>Email: <strong>saiensk01@gmail.com</strong></p>
+</section>
+
+<footer>
+  &copy; 2025 Borkha House. All Rights Reserved.
+</footer>
+
+</body>
+</html>
